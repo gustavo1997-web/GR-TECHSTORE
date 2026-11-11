@@ -1,0 +1,1899 @@
+.nav-background{
+    background-color: #010830 !important;
+    color: #1900ff !important;
+}
+.texto-blanco{
+    color: #fff !important;
+}
+.nav-background .enlace-linea::after{
+    background-color: #fcfcfb;
+}
+.gr-header{
+    background: linear-gradient(90deg, #02091f, #071338, #02091f);
+    border-bottom: 2px solid #00d9ff;
+    box-shadow: 0 2px 15px #00d9ff50;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+}
+.gr-nav{
+    max-width: 1250px;
+    margin: auto;
+    padding: 12px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.gr-logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 8px;
+}
+.gr-logo-icon{
+    font-size: 30px;
+    font-weight: 900;
+    font-style: italic;
+    color: #00ddff;
+    text-shadow: 0 0 12px #00ddff80;
+}
+.gr-logo-text{
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    font-style: italic;
+}
+.gr-logo-text small{
+    display: block;
+    color: #c8eaff;
+    font-size: 9px;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+.gr-menu{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.gr-menu a{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 10px 14px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+.gr-menu svg{
+    width: 18px;
+    height: 18px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+.gr-menu .gr-inicio{
+    background: linear-gradient(90deg, #0071c9, #00cfff);
+    box-shadow: 0 0 15px #00d9ff80;
+    color: white;
+}
+.gr-menu a:hover,
+.gr-menu a:focus-visible{
+    color: white;
+    background: linear-gradient(90deg, #006cba, #00cfff);
+    box-shadow: 0 0 18px #00d9ff99;
+    transform: translateY(-2px);
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+@media (max-width: 700px){
+    .gr-nav{
+        flex-direction: column;
+        padding: 12px;
+    }
+    .gr-menu{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+    .gr-menu a{
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+    .gr-menu svg{
+        width: 15px;
+        height: 15px;
+    }
+}
+.boton-nav{
+    background-color: #f3f3f7 !important;
+    color: #5900ff !important;
+}
+
+.carousel-titulo-caption{
+    background-color: #01072e91 !important; 
+    border-radius: 20px !important;  
+}
+
+.margenes{
+
+    margin:10px;
+}
+
+.promo-gr {
+    max-width: 1140px;
+    margin: 24px auto;
+    background: linear-gradient(135deg, #07152F, #32d1e6);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 18px;
+    font-family: Arial, sans-serif;
+}
+.promo-gr h3 {
+    color: #38BDF8;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+.promo-gr h1 {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.promo-gr p {
+    color: #D1D5DB;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.boton-promo {
+    display: inline-block;
+    background-color: #FACC15;
+    color: #14213D;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.boton-promo:hover {
+    background-color: #F59E0B;
+    transform: scale(1.05);
+}
+.promo-gr .boton-promo.boton-brillo {
+    border-radius: 30px;
+    background-color: #FACC15;
+    color: #14213D;
+    padding: 15px 30px;
+}
+
+/* SECCION DE ANIMACIONES CSS 3D */
+.seccion-3d{
+    background-color: #f3f3f7;
+    border-radius: 20px;
+    padding: 24px 16px 8px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.titulo-seccion{
+    color: #010830;
+    text-align: center;
+}
+.texto-seccion{
+    text-align: center;
+    margin-bottom: 24px;
+}
+.subtitulo-3d{
+    color: #010830;
+    text-align: center;
+    font-size: 18px;
+}
+.nota-3d{
+    font-size: 14px;
+    text-align: center;
+    margin-top: 12px;
+}
+.caja-demo{
+    min-height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 1. Giro en el eje Y: perspective + rotateY */
+.escena-3d{
+    width: 220px;
+    height: 160px;
+    /* perspective: profundidad de la escena. Va en el padre. Sin esto, el giro se ve plano. */
+    perspective: 1000px;
+}
+.tarjeta-giro{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* transform-style: preserve-3d mantiene a los hijos en 3D. Con flat, las dos caras se aplastan. */
+    transform-style: preserve-3d;
+    /* transition: suaviza el cambio. Aqui anima transform en 0.8s al entrar o salir del :hover. */
+    transition: transform 0.8s ease;
+}
+/* :hover aplica el estilo solo mientras el mouse esta encima del elemento. */
+.escena-3d:hover .tarjeta-giro{
+    /* rotateY: gira sobre el eje vertical, como una puerta. 180deg muestra la cara de atras. */
+    transform: rotateY(180deg);
+}
+.cara-frontal,
+.cara-trasera{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    /* backface-visibility: hidden oculta la cara cuando queda de espaldas, para que el texto no se lea al reves. */
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 12px;
+    overflow: hidden;
+}
+.cara-frontal{
+    background-color: #010830;
+    color: #ffffff;
+}
+.cara-trasera{
+    background-color: #f3f3f7;
+    color: #010830;
+    border: 2px solid #010830;
+    /* rotateY(180deg) deja esta cara mirando hacia atras desde el inicio, lista para verse al girar la tarjeta. */
+    transform: rotateY(180deg);
+}
+.cara-frontal img,
+.cara-trasera img{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+.cara-frontal span,
+.cara-trasera span{
+    position: relative;
+    z-index: 1;
+    padding: 6px 12px;
+    border-radius: 8px;
+    background-color: rgba(1, 8, 48, 0.78);
+    color: #fff;
+}
+
+/* 2. Inclinacion en el eje X: rotateX */
+.demo-eje-x{
+    /* perspective: igual que en el giro, da profundidad para que rotateX no se vea solo achatado. */
+    perspective: 1000px;
+}
+.panel-eje-x{
+    width: 220px;
+    height: 160px;
+    position: relative;
+    overflow: hidden;
+    background-color: #010830;
+    color: #fff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* transform-origin: punto que se queda fijo al girar. center top usa el borde de arriba, como la bisagra de una tapa. */
+    transform-origin: center top;
+    transition: transform 0.7s ease;
+}
+.panel-eje-x img{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+.panel-eje-x span{
+    position: relative;
+    z-index: 1;
+    padding: 6px 12px;
+    border-radius: 8px;
+    background-color: rgba(1, 8, 48, 0.78);
+}
+.demo-eje-x:hover .panel-eje-x{
+    /* rotateX: gira sobre el eje horizontal. El panel se inclina hacia adelante o hacia atras. */
+    transform: rotateX(58deg);
+}
+
+/* 3. Cubo con animacion continua */
+.escena-cubo{
+    width: 160px;
+    height: 160px;
+    perspective: 800px;
+}
+.cubo-3d{
+    width: 120px;
+    height: 120px;
+    position: relative;
+    margin: 20px auto;
+    /* preserve-3d permite que cada cara, movida con translateZ, forme un cubo y no un plano. */
+    transform-style: preserve-3d;
+    /* animation: ejecuta los pasos de @keyframes. 8s es la duracion, linear es velocidad constante e infinite la repite. */
+    animation: girar-cubo 8s linear infinite;
+}
+.escena-cubo:hover .cubo-3d{
+    /* animation-play-state: paused detiene la animacion sin borrarla. Al quitar el mouse, running la sigue. */
+    animation-play-state: paused;
+}
+.cara-cubo{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    border: 2px solid #f3f3f7;
+    /* backface-visibility: hidden evita ver el reverso de una cara cuando el cubo da la vuelta. */
+    backface-visibility: hidden;
+}
+.cara-cubo img{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+.cara-frente{
+    background-color: #010830;
+    /* translateZ: mueve en el eje de profundidad. 60px es la mitad del cubo y coloca la cara en la superficie. */
+    transform: translateZ(60px);
+}
+.cara-atras{
+    background-color: #0a1a6b;
+    transform: rotateY(180deg) translateZ(60px);
+}
+.cara-derecha{
+    background-color: #1630a0;
+    transform: rotateY(90deg) translateZ(60px);
+}
+.cara-izquierda{
+    background-color: #2436a0;
+    transform: rotateY(-90deg) translateZ(60px);
+}
+.cara-arriba{
+    background-color: #3d4ec4;
+    transform: rotateX(90deg) translateZ(60px);
+}
+.cara-abajo{
+    background-color: #08124a;
+    transform: rotateX(-90deg) translateZ(60px);
+}
+/* @keyframes define los pasos de la animacion. De 0% a 100% el cubo da una vuelta completa en Y. */
+@keyframes girar-cubo{
+    0%{
+        transform: rotateX(-18deg) rotateY(0deg);
+    }
+    100%{
+        transform: rotateX(-18deg) rotateY(360deg);
+    }
+}
+
+/* Las cards del inicio tambien se inclinan en 3D */
+.col-efecto-3d{
+    /* perspective en la columna para que la card se incline con profundidad real. */
+    perspective: 1000px;
+}
+.card-efecto-3d{
+    /* transition anima a la vez el giro (transform) y la sombra (box-shadow). */
+    transition: transform 0.45s ease, box-shadow 0.45s ease;
+}
+.col-efecto-3d:hover .card-efecto-3d{
+    /* rotateX y rotateY juntos inclinan la card en diagonal, como si la miraras de lado. */
+    transform: rotateX(6deg) rotateY(-10deg);
+    box-shadow: 16px 18px 28px rgba(1, 8, 48, 0.28);
+}
+
+/* BOTON FLOTANTE DE WHATSAPP: el zoom del hover usa scale */
+.boton-whatsapp{
+    /* position: fixed lo pega a la ventana. Sigue abajo a la derecha aunque bajes con el scroll. */
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    width: 62px;
+    height: 62px;
+    background-color: #25d366;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* z-index: capa. Un numero alto lo deja por encima del contenido para que no lo tape la pagina. */
+    z-index: 1040;
+    text-decoration: none;
+    box-shadow: 0 6px 16px rgba(1, 8, 48, 0.35);
+    /* transition: el scale del :hover entra y sale en 0.3s, sin salto. */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #fff;
+    overflow: hidden;
+}
+.boton-whatsapp:hover,
+/* :focus-visible es el mismo efecto cuando el boton se enfoca con el teclado, no solo con el mouse. */
+.boton-whatsapp:focus-visible{
+    /* scale: agranda o reduce. 1.2 significa 120% y por eso el boton hace zoom. */
+    transform: scale(1.18);
+    box-shadow: 0 10px 18px rgba(37, 211, 102, 0.45);
+}
+.boton-whatsapp svg{
+    width: 30px;
+    height: 30px;
+    display: block;
+    color: #fff;
+    flex-shrink: 0;
+    shape-rendering: geometricPrecision;
+    image-rendering: optimizeQuality;
+}
+
+/* LIBROS: montados como naipes. El hover saca uno al frente */
+.estante{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    justify-content: center;
+    min-height: 320px;
+    padding: 96px 12px 12px;
+    border-bottom: 8px solid #010830;
+}
+.libro{
+    width: 132px;
+    height: 210px;
+    flex-shrink: 0;
+    border-radius: 4px 14px 14px 4px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;
+    padding: 10px 8px;
+    position: relative;
+    box-shadow: 4px 8px 14px rgba(1, 8, 48, 0.28);
+    /* transition anima el giro y el salto al pasar el mouse. */
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    /* transform-origin: el borde de abajo queda en el stand mientras el libro se endereza. */
+    transform-origin: bottom center;
+}
+/* El libro de la derecha tapa al de la izquierda, como una carta sobre otra. */
+.libro + .libro{
+    margin-left: -78px;
+}
+.libro img{
+    width: 100%;
+    height: 92px;
+    object-fit: contain;
+    background-color: #fff;
+    border-radius: 8px;
+}
+.libro strong{
+    font-size: 14px;
+    text-align: center;
+}
+.libro p{
+    font-size: 12px;
+    line-height: 1.3;
+    text-align: center;
+    margin: 0;
+}
+.libro-a{
+    z-index: 1;
+    background-color: #010830;
+    transform: rotate(-16deg);
+}
+.libro-b{
+    z-index: 2;
+    background-color: #0a1a6b;
+    transform: rotate(-8deg);
+}
+.libro-c{
+    z-index: 3;
+    background-color: #1630a0;
+    transform: rotate(0deg);
+}
+.libro-d{
+    z-index: 4;
+    background-color: #2436a0;
+    transform: rotate(8deg);
+}
+.libro-e{
+    z-index: 5;
+    background-color: #08124a;
+    transform: rotate(16deg);
+}
+.libro:hover{
+    /* Sube, se endereza y crece. z-index lo deja encima para ver portada y texto completos. */
+    transform: translateY(-56px) rotate(0deg) scale(1.18);
+    z-index: 10;
+    box-shadow: 0 18px 28px rgba(1, 8, 48, 0.4);
+}
+
+/* FICHA: el alto crece y aparece el texto */
+.ficha{
+    background-color: #fff;
+    border: 2px solid #010830;
+    border-radius: 20px;
+    /* max-height marca el alto visible. Se anima; height: auto no crece de forma gradual. */
+    max-height: 146px;
+    /* overflow: hidden recorta lo que no cabe, por eso el texto no se ve al inicio. */
+    overflow: hidden;
+    transition: max-height 0.45s ease;
+}
+.ficha:hover{
+    max-height: 340px;
+}
+.ficha-imagen{
+    height: 146px;
+    background-color: #010830;
+}
+.ficha-imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.ficha-texto{
+    padding: 12px 16px 16px;
+    color: #010830;
+}
+.ficha-texto h4{
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+/* OTROS EFECTOS */
+.otros-efectos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    align-items: flex-end;
+    justify-content: center;
+}
+.efecto-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: #010830;
+    font-size: 13px;
+    text-align: center;
+}
+.foto-gris{
+    width: 88px;
+    height: 88px;
+    object-fit: contain;
+    background-color: #fff;
+    border-radius: 12px;
+    border: 2px solid #010830;
+    /* filter: grayscale(1) quita el color. En 0 la imagen vuelve a verse a color. */
+    filter: grayscale(1);
+    transition: filter 0.4s ease;
+}
+.foto-gris:hover{
+    filter: grayscale(0);
+}
+.enlace-linea{
+    position: relative;
+    color: #010830;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    padding-bottom: 6px;
+}
+/* ::after crea una caja extra, sin HTML. Aqui es la linea de abajo del enlace. */
+.enlace-linea::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #010830;
+    /* scaleX(0) aplasta la linea en horizontal. El origen a la izquierda hace que crezca hacia la derecha. */
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.3s ease;
+}
+.enlace-linea:hover::after{
+    transform: scaleX(1);
+}
+.mini-card{
+    width: 110px;
+    height: 72px;
+    background-color: #fff;
+    color: #010830;
+    border: 2px solid #010830;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.mini-card:hover{
+    /* translateY(-8px) sube la card 8px. El valor negativo va hacia arriba. */
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(1, 8, 48, 0.28);
+}
+.boton-pulso{
+    border: 0;
+    border-radius: 20px;
+    background-color: #010830;
+    color: #fff;
+    padding: 10px 18px;
+    /* animation infinita: el boton crece y vuelve solo, sin :hover. */
+    animation: pulso 1.2s ease infinite;
+}
+@keyframes pulso{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.08);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.cargando{
+    width: 42px;
+    height: 42px;
+    border: 4px solid #d9dbe7;
+    /* Solo el borde de arriba lleva color, por eso al girar parece un cargador. */
+    border-top-color: #010830;
+    border-radius: 50%;
+    animation: girar-carga 0.8s linear infinite;
+}
+@keyframes girar-carga{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.boton-brillo{
+    position: relative;
+    overflow: hidden;
+    border: 0;
+    border-radius: 20px;
+    background-color: #010830;
+    color: #fff;
+    padding: 10px 22px;
+}
+/* ::before es otra capa invisible del boton. El brillo cruza de izquierda a derecha. */
+.boton-brillo::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -80%;
+    width: 40%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.35);
+    transform: skewX(-20deg);
+    animation: brillo 2.2s ease infinite;
+}
+@keyframes brillo{
+    0%{
+        left: -80%;
+    }
+    100%{
+        left: 140%;
+    }
+}
+
+/* ENLACES DE ESTUDIO */
+.lista-enlaces{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.lista-enlaces li{
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+}
+.lista-enlaces a{
+    color: #010830;
+    font-weight: bold;
+    margin-right: 8px;
+}
+.lista-enlaces span{
+    color: #333;
+}
+.seccion-mas-animaciones .titulo-seccion{
+    font-size:40x;
+}
+.seccion-mas-animaciones .subtitulo-3d{
+    font-size: 22px;
+}
+.seccion-mas-animaciones .estante{
+    min-height: 430px;
+    padding-top: 100px;
+}
+.seccion-mas-animaciones .libro{
+    width: 210px;
+    height: 300px;
+    padding: 14px 12px;
+}
+.seccion-mas-animaciones .libro + .libro{
+    margin-left: -110px;
+}
+.seccion-mas-animaciones .libro img{
+    height: 130px;
+}
+.seccion-mas-animaciones .libro strong{
+    font-size: 16px;
+}
+.seccion-mas-animaciones .libro p{
+    font-size: 14px;
+}
+.seccion-mas-animaciones .libro:hover{
+    transform: translateY(-56px) rotate(0deg) scale(1.12);
+}
+.seccion-mas-animaciones .ficha{
+    max-height: 180px;
+}
+.seccion-mas-animaciones .ficha:hover{
+    max-height: 390px;
+}
+.seccion-mas-animaciones .ficha-imagen{
+    height: 180px;
+}
+.seccion-mas-animaciones .lista-enlaces li{
+    padding: 16px 20px;
+    margin-bottom: 12px;
+    font-size: 17px;
+}
+.seccion-animaciones-3d{
+    padding: 60px 60px 60px;
+}
+.seccion-animaciones-3d .titulo-seccion{
+    font-size: 60px;
+}
+.seccion-animaciones-3d .texto-seccion{
+    font-size: 17px;
+}
+.seccion-animaciones-3d .subtitulo-3d{
+    font-size: 20px;
+}
+.seccion-animaciones-3d .nota-3d{
+    font-size: 15px;
+}
+.seccion-animaciones-3d .caja-demo{
+    min-height: 260px;
+}
+.seccion-animaciones-3d .escena-3d,
+.seccion-animaciones-3d .panel-eje-x{
+    width: 250px;
+    height: 180px;
+}
+.seccion-animaciones-3d .escena-cubo{
+    width: 176px;
+    height: 176px;
+}
+.seccion-animaciones-3d .cubo-3d{
+    width: 132px;
+    height: 132px;
+}
+.seccion-animaciones-3d .cara-cubo{
+    width: 132px;
+    height: 132px;
+}
+.seccion-animaciones-3d .cara-frente{
+    transform: translateZ(66px);
+}
+.seccion-animaciones-3d .cara-atras{
+    transform: rotateY(180deg) translateZ(66px);
+}
+.seccion-animaciones-3d .cara-derecha{
+    transform: rotateY(90deg) translateZ(66px);
+}
+.seccion-animaciones-3d .cara-izquierda{
+    transform: rotateY(-90deg) translateZ(66px);
+}
+.seccion-animaciones-3d .cara-arriba{
+    transform: rotateX(90deg) translateZ(66px);
+}
+.seccion-animaciones-3d .cara-abajo{
+    transform: rotateX(-90deg) translateZ(66px);
+}
+@media (max-width: 767px){
+    .seccion-mas-animaciones .estante{
+        min-height: 0;
+        flex-wrap: wrap;
+        gap: 14px;
+        padding: 20px 12px 12px;
+    }
+    .seccion-mas-animaciones .libro + .libro{
+        margin-left: 0;
+    }
+    .seccion-mas-animaciones .libro-a,
+    .seccion-mas-animaciones .libro-b,
+    .seccion-mas-animaciones .libro-c,
+    .seccion-mas-animaciones .libro-d,
+    .seccion-mas-animaciones .libro-e{
+        transform: none;
+    }
+    .seccion-mas-animaciones .libro:hover{
+        transform: translateY(-8px) scale(1.04);
+    }
+}
+.pagina-contacto{
+    min-height: 100vh;
+    background-color: #f3f3f7;
+}
+.contacto-portada{
+    margin-bottom: 36px;
+    color: #010830;
+}
+.contacto-portada h1{
+    font-size: clamp(2rem, 5vw, 3.25rem);
+    font-weight: 700;
+}
+.contacto-portada > p:last-child{
+    color: #555;
+}
+.contacto-etiqueta{
+    color: #1630a0;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+}
+.contacto-titulo{
+    margin-bottom: 18px;
+    color: #010830;
+    font-size: 1.5rem;
+}
+.contacto-tarjeta,
+.contacto-formulario{
+    margin-bottom: 16px;
+    padding: 22px;
+    border: 1px solid #e1e4ee;
+    border-radius: 14px;
+    background-color: #fff;
+    box-shadow: 0 6px 18px rgba(1, 8, 48, 0.08);
+}
+.contacto-tarjeta h3{
+    color: #1630a0;
+    font-size: 1.1rem;
+}
+.contacto-ayuda{
+    color: #606778;
+    font-size: 0.9rem;
+}
+.contacto-pie{
+    padding: 20px;
+    background-color: #010830;
+    color: #fff;
+}
+.pagina-informacion{
+    min-height: 100vh;
+    background-color: #f3f3f7;
+}
+.info-portada{
+    position: relative;
+    overflow: hidden;
+    padding: 76px 0;
+    background:
+        radial-gradient(ellipse at 12% 90%, rgba(0, 217, 255, 0.3), transparent 38%),
+        radial-gradient(ellipse at 92% 10%, rgba(250, 204, 21, 0.2), transparent 30%),
+        linear-gradient(135deg, #010830, #1630a0);
+    color: #fff;
+}
+.info-portada .container{
+    position: relative;
+    z-index: 1;
+}
+.info-portada::after{
+    position: absolute;
+    right: -100px;
+    bottom: -240px;
+    width: 420px;
+    height: 420px;
+    border: 1px solid rgba(141, 232, 245, 0.25);
+    border-radius: 50%;
+    content: "";
+}
+.info-portada h1{
+    max-width: 780px;
+    margin: 0 auto 16px;
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+    font-weight: 700;
+}
+.info-portada > .container > p:not(.contacto-etiqueta){
+    max-width: 640px;
+    margin: 0 auto;
+    color: #e1e8ff;
+    font-size: 1.1rem;
+}
+.info-portada .contacto-etiqueta{
+    color: #8de8f5;
+}
+.info-presentacion{
+    max-width: 780px;
+    margin: 0 auto;
+    text-align: center;
+}
+.info-presentacion h2,
+.info-titulo{
+    margin-bottom: 16px;
+    color: #010830;
+}
+.info-presentacion > p:last-child{
+    color: #555;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+.info-galeria{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+.info-galeria-item{
+    position: relative;
+    min-height: 280px;
+    overflow: hidden;
+    margin: 0;
+    border: 4px solid #fff;
+    border-radius: 20px;
+    background: #071338;
+    box-shadow: 0 12px 30px rgba(1, 8, 48, 0.16);
+    isolation: isolate;
+}
+.info-galeria-item::after{
+    position: absolute;
+    z-index: 0;
+    inset: 35% 0 0;
+    background: linear-gradient(transparent, rgba(1, 8, 48, 0.9));
+    content: "";
+}
+.info-galeria-item img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 280px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+.info-galeria-item:hover img{
+    transform: scale(1.06);
+}
+.info-galeria-item figcaption{
+    position: absolute;
+    z-index: 1;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #fff;
+}
+.info-galeria-item figcaption span{
+    color: #8de8f5;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.info-galeria-item figcaption strong{
+    font-size: 1.2rem;
+}
+.info-galeria-laptop{
+    transform: translateY(18px);
+}
+.info-galeria-gamer{
+    transform: translateY(36px);
+}
+.info-proposito{
+    padding: 24px;
+    border: 1px solid #e1e4ee;
+    border-radius: 14px;
+    background-color: #fff;
+    box-shadow: 0 6px 18px rgba(1, 8, 48, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.info-proposito:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(1, 8, 48, 0.14);
+}
+.info-proposito-icono{
+    display: block;
+    margin-bottom: 12px;
+    font-size: 2rem;
+}
+.info-proposito h3{
+    color: #1630a0;
+    font-size: 1.2rem;
+}
+.info-proposito p{
+    margin-bottom: 0;
+    color: #555;
+    line-height: 1.7;
+}
+.info-categoria{
+    overflow: hidden;
+    padding: 18px;
+    border: 1px solid #e1e4ee;
+    border-radius: 14px;
+    background-color: #fff;
+    box-shadow: 0 6px 18px rgba(1, 8, 48, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.info-categoria:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(1, 8, 48, 0.14);
+}
+.info-categoria img{
+    width: 100%;
+    height: 150px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    object-fit: contain;
+}
+.info-categoria h3{
+    color: #1630a0;
+    font-size: 1.2rem;
+}
+.info-categoria p{
+    margin-bottom: 0;
+    color: #555;
+}
+.info-contacto{
+    padding: 48px 0;
+    background-color: #010830;
+    color: #fff;
+}
+.info-contacto h2{
+    margin-bottom: 12px;
+}
+@media (max-width: 767px){
+    .info-galeria{
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .info-galeria-laptop,
+    .info-galeria-gamer{
+        transform: none;
+    }
+    .info-galeria-item,
+    .info-galeria-item img{
+        min-height: 240px;
+    }
+}
+.pagina-productos{
+    min-height: 100vh;
+    background-color: #f3f3f7;
+}
+.productos-portada{
+    position: relative;
+    overflow: hidden;
+    padding: 64px 0;
+    background: linear-gradient(135deg, #010830, #1630a0);
+    color: #fff;
+}
+.productos-portada::before,
+.productos-portada::after{
+    position: absolute;
+    border: 1px solid rgba(141, 232, 245, 0.18);
+    border-radius: 50%;
+    content: "";
+    pointer-events: none;
+}
+.productos-portada::before{
+    top: -150px;
+    right: -80px;
+    width: 360px;
+    height: 360px;
+}
+.productos-portada::after{
+    right: 90px;
+    bottom: -240px;
+    width: 420px;
+    height: 420px;
+}
+.productos-portada h1{
+    max-width: 700px;
+    margin: 0 0 16px;
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+    font-weight: 700;
+}
+.productos-portada .col-lg-7 > p:not(.contacto-etiqueta){
+    max-width: 640px;
+    margin: 0;
+    color: #e1e8ff;
+    font-size: 1.1rem;
+}
+.productos-portada .contacto-etiqueta{
+    color: #8de8f5;
+}
+.productos-portada-imagen{
+    position: relative;
+    z-index: 1;
+    padding: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 22px 50px rgba(0, 0, 0, 0.22);
+    transform: rotate(2deg);
+}
+.productos-portada-imagen img{
+    display: block;
+    width: 100%;
+    max-height: 300px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+.productos-destacados{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 32px;
+}
+.producto-destacado{
+    position: relative;
+    min-height: 170px;
+    overflow: hidden;
+    border-radius: 14px;
+    background-color: #010830;
+    box-shadow: 0 8px 20px rgba(1, 8, 48, 0.14);
+    color: #fff;
+    text-decoration: none;
+}
+.producto-destacado::after{
+    position: absolute;
+    inset: 35% 0 0;
+    background: linear-gradient(transparent, rgba(1, 8, 48, 0.9));
+    content: "";
+}
+.producto-destacado img{
+    width: 100%;
+    height: 100%;
+    min-height: 170px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.producto-destacado span{
+    position: absolute;
+    z-index: 1;
+    right: 16px;
+    bottom: 14px;
+    left: 16px;
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+.producto-destacado:hover{
+    color: #fff;
+}
+.producto-destacado:hover img{
+    transform: scale(1.06);
+}
+.producto-item{
+    overflow: hidden;
+    border: 1px solid #e1e4ee;
+    border-radius: 14px;
+    background-color: #fff;
+    box-shadow: 0 6px 18px rgba(1, 8, 48, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.producto-item:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(1, 8, 48, 0.14);
+}
+.producto-item > img{
+    display: block;
+    width: 100%;
+    height: 190px;
+    padding: 12px;
+    background-color: #fff;
+    object-fit: contain;
+}
+.producto-item-contenido{
+    display: flex;
+    height: calc(100% - 190px);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 18px;
+}
+.producto-item-categoria{
+    margin-bottom: 6px;
+    color: #1630a0;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.producto-item h3{
+    color: #010830;
+    font-size: 1.15rem;
+}
+.producto-item p{
+    flex-grow: 1;
+    color: #555;
+}
+.producto-item-precio{
+    margin: 0 0 14px;
+    color: #1630a0;
+    font-size: 1.35rem;
+}
+.productos-aviso{
+    margin: 22px 0 0;
+    color: #666;
+    font-size: 0.9rem;
+    text-align: center;
+}
+.producto-categoria{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    border: 1px solid #e1e4ee;
+    border-radius: 14px;
+    background-color: #fff;
+    box-shadow: 0 6px 18px rgba(1, 8, 48, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.producto-categoria:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(1, 8, 48, 0.14);
+}
+.producto-categoria img{
+    width: 100%;
+    height: 180px;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    object-fit: contain;
+}
+.producto-categoria h3{
+    color: #1630a0;
+    font-size: 1.25rem;
+}
+.producto-categoria p{
+    flex-grow: 1;
+    color: #555;
+}
+@media (max-width: 767px){
+    .productos-portada{
+        padding: 48px 0;
+        text-align: center;
+    }
+    .productos-portada h1,
+    .productos-portada .col-lg-7 > p:not(.contacto-etiqueta){
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .productos-portada-imagen img{
+        max-height: 220px;
+    }
+    .productos-destacados{
+        grid-template-columns: 1fr;
+    }
+    .producto-destacado{
+        min-height: 150px;
+    }
+    .producto-destacado img{
+        min-height: 150px;
+    }
+}
+
+/* ESTILOS DE LA PAGINA DE CONTACTO */
+.pagina-contacto{
+    --navy: #04102b;
+    --navy2: #06265c;
+    --cyan: #00d8ff;
+    --orange: #ff9f15;
+    --paper: #f3f8ff;
+    --ink: #0b1a3a;
+    --muted: #576780;
+    --stroke: #dce8f5;
+    --shadow: 0 9px 24px #08295c1c;
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.pagina-contacto *,
+.pagina-contacto *::before,
+.pagina-contacto *::after{
+    box-sizing: border-box;
+}
+html.pagina-contacto-documento{
+    scroll-behavior: smooth;
+    scroll-padding-top: 92px;
+}
+.pagina-contacto a{
+    color: inherit;
+}
+.pagina-contacto .iconos-def{
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+.pagina-contacto .icon{
+    width: 19px;
+    height: 19px;
+    flex-shrink: 0;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.9;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+.pagina-contacto .icon.grande{
+    width: 31px;
+    height: 31px;
+}
+.pagina-contacto .gr-contenedor{
+    width: min(1160px, calc(100% - 44px));
+    margin-inline: auto;
+}
+.pagina-contacto .gr-header{
+    position: sticky;
+    z-index: 40;
+    top: 0;
+    background: #03112c;
+    border-bottom: 2px solid var(--cyan);
+    box-shadow: 0 5px 22px #00d8ff21;
+}
+.pagina-contacto .gr-nav{
+    display: flex;
+    min-height: 75px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22px;
+    margin: 0 auto;
+    padding: 0;
+}
+.pagina-contacto .gr-logo{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.pagina-contacto .gr-logo-gr{
+    padding-right: 6px;
+    color: var(--cyan);
+    font-size: 42px;
+    font-style: italic;
+    font-weight: 1000;
+    letter-spacing: -6px;
+    line-height: 1;
+    text-shadow: 0 0 14px #00d8ff60;
+}
+.pagina-contacto .gr-logo-cuerpo{
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 900;
+    line-height: 1;
+}
+.pagina-contacto .gr-logo-cuerpo small{
+    display: block;
+    margin-top: 5px;
+    font-size: 9px;
+    font-style: normal;
+    letter-spacing: .6px;
+}
+.pagina-contacto .gr-menu{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+.pagina-contacto .gr-menu a{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 14px;
+    border-radius: 26px;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background .2s, transform .2s;
+}
+.pagina-contacto .gr-menu a:hover{
+    transform: translateY(-2px);
+    background: #0a4380;
+}
+.pagina-contacto .gr-menu a.gr-activo{
+    background: linear-gradient(120deg, #ffb930, #ff9200);
+    box-shadow: 0 0 18px #ffa51e80;
+    color: #07142c;
+}
+.pagina-contacto .gr-hero{
+    display: flex;
+    min-height: 460px;
+    align-items: center;
+    border-bottom: 5px solid #0d4c88;
+    background: #04102b url("../imagenes/banner-contacto.jpg") center center / cover no-repeat;
+    color: white;
+}
+.pagina-contacto .gr-hero-interior{
+    display: flex;
+    min-height: 460px;
+    align-items: center;
+}
+.pagina-contacto .gr-hero-texto{
+    max-width: 560px;
+    padding: 48px 0;
+}
+.pagina-contacto .gr-superior{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #35e9ff;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+.pagina-contacto .gr-linea{
+    display: inline-block;
+    width: 44px;
+    height: 3px;
+    background: var(--cyan);
+}
+.pagina-contacto .gr-hero h1{
+    margin: 15px 0 17px;
+    font-size: clamp(37px, 4.5vw, 61px);
+    font-weight: 900;
+    letter-spacing: -1px;
+    line-height: 1.05;
+}
+.pagina-contacto .gr-hero h1 span{
+    display: block;
+    color: var(--cyan);
+}
+.pagina-contacto .gr-hero p{
+    max-width: 460px;
+    margin: 0 0 26px;
+    color: #edf6ff;
+    font-size: 19px;
+    line-height: 1.5;
+}
+.pagina-contacto .gr-hero-acciones{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+}
+.pagina-contacto .gr-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    padding: 15px 23px;
+    border: 0;
+    border-radius: 35px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 800;
+    text-decoration: none;
+    transition: transform .2s, box-shadow .2s;
+}
+.pagina-contacto .gr-btn:hover{
+    transform: translateY(-3px);
+}
+.pagina-contacto .gr-btn-naranja{
+    background: linear-gradient(90deg, #ffb62d, #ff9c02);
+    box-shadow: 0 0 20px #f5a91a66;
+    color: #08172b;
+}
+.pagina-contacto .gr-btn-naranja:hover{
+    box-shadow: 0 0 26px #f5a91a99;
+}
+.pagina-contacto .gr-enlace-sec{
+    color: #e9f9ff;
+    font-size: 13px;
+    text-underline-offset: 4px;
+}
+.pagina-contacto .gr-seccion-contacto{
+    display: grid;
+    grid-template-columns: .95fr 1.13fr;
+    align-items: start;
+    gap: 40px;
+    padding-block: 65px 80px;
+}
+.pagina-contacto .gr-encabezado-seccion{
+    margin-bottom: 23px;
+}
+.pagina-contacto .gr-kicker{
+    margin: 0 0 8px;
+    color: #0d74c1;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.pagina-contacto .gr-encabezado-seccion h2{
+    margin: 0 0 9px;
+    font-size: 32px;
+    letter-spacing: -.5px;
+}
+.pagina-contacto .gr-encabezado-seccion h2 span{
+    color: #0482c6;
+}
+.pagina-contacto .gr-encabezado-seccion > p:last-child{
+    margin: 0;
+    color: var(--muted);
+    font-size: 15px;
+}
+.pagina-contacto .gr-info-card{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0 0 15px;
+    padding: 17px 20px;
+    border: 1px solid var(--stroke);
+    border-radius: 17px;
+    background: white;
+    box-shadow: var(--shadow);
+    text-decoration: none;
+    transition: transform .2s, box-shadow .2s;
+}
+.pagina-contacto a.gr-info-card:hover{
+    transform: translateX(4px);
+    box-shadow: 0 12px 28px #047dcc30;
+}
+.pagina-contacto .gr-burbuja{
+    display: grid;
+    width: 63px;
+    height: 63px;
+    flex: 0 0 63px;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: inset 0 -7px 17px #0002;
+    color: white;
+}
+.pagina-contacto .gr-burbuja.verde{background: linear-gradient(130deg, #2cdd8f, #04a64e)}
+.pagina-contacto .gr-burbuja.azul{background: linear-gradient(130deg, #11b8ff, #1262cf)}
+.pagina-contacto .gr-burbuja.morado{background: linear-gradient(130deg, #b44cf1, #6425e9)}
+.pagina-contacto .gr-burbuja.naranja{background: linear-gradient(130deg, #ffc043, #fd6205)}
+.pagina-contacto .gr-info-copy{
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    gap: 5px;
+}
+.pagina-contacto .gr-info-copy strong{
+    color: #091f4b;
+    font-size: 17px;
+}
+.pagina-contacto .gr-info-copy b{
+    overflow-wrap: anywhere;
+    font-size: 14px;
+}
+.pagina-contacto .gr-info-copy small{
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.5;
+}
+.pagina-contacto .gr-chevron{
+    margin-left: auto;
+    color: #006fc7;
+}
+.pagina-contacto .gr-formulario{
+    overflow: hidden;
+    border: 1px solid #cfdeed;
+    border-radius: 22px;
+    background: white;
+    box-shadow: 0 16px 42px #072d5a2a;
+}
+.pagina-contacto .gr-formulario-cabecera{
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    padding: 24px 29px;
+    background: linear-gradient(110deg, #082e68 0%, #053a7d 78%, #08a9ea 100%);
+    color: white;
+}
+.pagina-contacto .gr-formulario-cabecera > .icon{
+    width: 43px;
+    height: 43px;
+    color: #2cf1ff;
+}
+.pagina-contacto .gr-formulario-cabecera h2{
+    margin: 0 0 5px;
+    font-size: 24px;
+}
+.pagina-contacto .gr-formulario-cabecera p{
+    margin: 0;
+    color: #dcf3ff;
+    font-size: 14px;
+}
+.pagina-contacto .gr-formulario form{
+    display: flex;
+    flex-direction: column;
+    padding: 27px 30px 30px;
+}
+.pagina-contacto .gr-formulario label{
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 800;
+}
+.pagina-contacto .gr-formulario label span{
+    color: #e13535;
+}
+.pagina-contacto .gr-formulario input:not(.gr-antispam),
+.pagina-contacto .gr-formulario select,
+.pagina-contacto .gr-formulario textarea{
+    width: 100%;
+    margin-bottom: 19px;
+    padding: 13px 14px;
+    border: 1px solid #bed1e6;
+    border-radius: 9px;
+    outline: 0;
+    background: #f9fcff;
+    color: #12284c;
+    font: inherit;
+    font-size: 15px;
+    transition: border-color .2s, box-shadow .2s;
+}
+.pagina-contacto .gr-formulario input:focus,
+.pagina-contacto .gr-formulario select:focus,
+.pagina-contacto .gr-formulario textarea:focus{
+    border-color: #00a6ed;
+    box-shadow: 0 0 0 3px #00c8ff22;
+}
+.pagina-contacto .gr-formulario textarea{
+    min-height: 124px;
+    resize: vertical;
+}
+.pagina-contacto .gr-formulario input.gr-antispam{
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+}
+.pagina-contacto .gr-aviso{
+    margin: 0 0 18px;
+    color: #697d96;
+    font-size: 12px;
+    line-height: 1.6;
+}
+.pagina-contacto .gr-btn-envio{
+    width: 100%;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #ffb92a, #ff8a00);
+    box-shadow: 0 6px 17px #ff990042;
+    color: #061426;
+    font-size: 17px;
+}
+.pagina-contacto .gr-preguntas{
+    padding: 56px 0 67px;
+    border-top: 3px solid #0c84ba;
+    background: radial-gradient(ellipse at 88% 0%, #073e7d, #041333 60%, #020b24);
+    color: white;
+}
+.pagina-contacto .gr-titulo-claro{
+    margin: 0 0 31px;
+    text-align: center;
+}
+.pagina-contacto .gr-titulo-claro h2{
+    margin: 0 0 12px;
+    font-size: 34px;
+}
+.pagina-contacto .gr-titulo-claro h2 span{
+    color: #00e0f5;
+}
+.pagina-contacto .gr-titulo-claro p{
+    margin: 0;
+    color: #d5e7f8;
+}
+.pagina-contacto .gr-faq-grid{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+.pagina-contacto .gr-faq-card{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 22px;
+    border-radius: 16px;
+    background: #f9fcff;
+    box-shadow: 0 10px 26px #0004;
+    color: var(--ink);
+}
+.pagina-contacto .gr-faq-card > .icon{
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+    stroke: #0879da;
+}
+.pagina-contacto .gr-faq-card h3{
+    margin: 2px 0 10px;
+    font-size: 16px;
+}
+.pagina-contacto .gr-faq-card p{
+    margin: 0;
+    color: #44536a;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.pagina-contacto .gr-footer{
+    border-top: 3px solid #03bdec;
+    background: #020b23;
+    color: white;
+}
+.pagina-contacto .gr-footer-grid{
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    gap: 40px;
+    padding: 37px 0;
+}
+.pagina-contacto .gr-footer h3{
+    margin: 0 0 13px;
+    font-size: 16px;
+}
+.pagina-contacto .gr-footer p{
+    margin: 10px 0;
+    color: #c3d5ef;
+    font-size: 13px;
+    line-height: 1.6;
+}
+.pagina-contacto .gr-footer-grid > div:nth-child(2) a{
+    display: block;
+    margin: 10px 0;
+}
+.pagina-contacto .gr-footer-grid a:not(.gr-logo){
+    color: #e2f6ff;
+    font-size: 13px;
+    text-decoration: none;
+}
+.pagina-contacto .gr-footer-grid a:not(.gr-logo):hover{
+    color: #00d8ff;
+}
+.pagina-contacto .gr-pie-final{
+    padding: 16px;
+    border-top: 1px solid #16426a;
+    color: #bccde0;
+    font-size: 12px;
+    text-align: center;
+}
+.pagina-contacto a:focus-visible,
+.pagina-contacto button:focus-visible{
+    outline: 3px solid #ff9f15;
+    outline-offset: 3px;
+}
+@media (max-width: 930px){
+    .pagina-contacto .gr-nav{
+        flex-direction: column;
+        gap: 14px;
+        padding: 15px 0;
+    }
+    .pagina-contacto .gr-hero,
+    .pagina-contacto .gr-hero-interior{
+        min-height: 410px;
+    }
+    .pagina-contacto .gr-seccion-contacto{
+        max-width: 690px;
+        grid-template-columns: 1fr;
+    }
+    .pagina-contacto .gr-faq-grid{
+        grid-template-columns: 1fr;
+    }
+    .pagina-contacto .gr-faq-card{
+        align-items: center;
+    }
+    .pagina-contacto .gr-footer-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 620px){
+    html.pagina-contacto-documento{
+        scroll-padding-top: 140px;
+    }
+    .pagina-contacto .gr-contenedor{
+        width: min(100% - 28px, 1160px);
+    }
+    .pagina-contacto .gr-logo-gr{
+        font-size: 35px;
+    }
+    .pagina-contacto .gr-logo-cuerpo{
+        font-size: 18px;
+    }
+    .pagina-contacto .gr-logo-cuerpo small{
+        font-size: 8px;
+    }
+    .pagina-contacto .gr-menu{
+        justify-content: center;
+        gap: 3px;
+    }
+    .pagina-contacto .gr-menu a{
+        padding: 9px;
+        font-size: 12px;
+    }
+    .pagina-contacto .gr-menu a .icon{
+        width: 15px;
+        height: 15px;
+    }
+    .pagina-contacto .gr-hero{
+        background-image: linear-gradient(90deg, #04102bec, #04102bc2 85%), url("../imagenes/banner-contacto.jpg");
+        background-position: 69% center;
+    }
+    .pagina-contacto .gr-hero,
+    .pagina-contacto .gr-hero-interior{
+        min-height: 450px;
+    }
+    .pagina-contacto .gr-hero-texto{
+        padding-block: 40px;
+    }
+    .pagina-contacto .gr-hero h1{
+        font-size: 39px;
+    }
+    .pagina-contacto .gr-hero p{
+        font-size: 16px;
+    }
+    .pagina-contacto .gr-btn-naranja{
+        font-size: 13px;
+    }
+    .pagina-contacto .gr-seccion-contacto{
+        padding-block: 42px;
+    }
+    .pagina-contacto .gr-encabezado-seccion h2{
+        font-size: 27px;
+    }
+    .pagina-contacto .gr-info-card{
+        gap: 12px;
+        padding: 14px;
+    }
+    .pagina-contacto .gr-burbuja{
+        width: 51px;
+        height: 51px;
+        flex-basis: 51px;
+    }
+    .pagina-contacto .gr-info-copy strong{
+        font-size: 15px;
+    }
+    .pagina-contacto .gr-info-copy b,
+    .pagina-contacto .gr-info-copy small{
+        font-size: 12px;
+    }
+    .pagina-contacto .gr-formulario-cabecera{
+        padding: 19px;
+    }
+    .pagina-contacto .gr-formulario-cabecera h2{
+        font-size: 19px;
+    }
+    .pagina-contacto .gr-formulario form{
+        padding: 20px;
+    }
+    .pagina-contacto .gr-titulo-claro h2{
+        font-size: 28px;
+    }
+    .pagina-contacto .gr-footer-grid{
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+}
+@media (prefers-reduced-motion: reduce){
+    html.pagina-contacto-documento{
+        scroll-behavior: auto;
+    }
+    .pagina-contacto *,
+    .pagina-contacto *::before,
+    .pagina-contacto *::after{
+        transition: none !important;
+    }
+}

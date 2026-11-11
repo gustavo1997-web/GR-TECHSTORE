@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="GR TECHSTORE">
+        <title>GR TECHSTORE</title>
+        <link rel="icon" href="Logotipo GR TECHSTORE en azul eléctrico.ico">
+        <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="dist/css/mi-estilo.css">
+     </head>
+    <body>
+        <header class="gr-header">
+            <nav class="gr-nav">
+                <a href="#inicio" class="gr-logo" aria-label="GR Techstore, inicio">
+                    <span class="gr-logo-icon">GR</span>
+                    <span class="gr-logo-text">
+                        TECHSTORE
+                        <small>TECNOLOGÍA A TU ALCANCE</small>
+                    </span>
+                </a>
+
+                <div class="gr-menu">
+                    <a href="#inicio" class="gr-inicio">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M3 10L12 3L21 10V21H14V14H10V21H3Z"/>
+                        </svg>
+                        Inicio
+                    </a>
+                    <a href="pague/productos.html">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="3" y="3" width="7" height="7"/>
+                            <rect x="14" y="3" width="7" height="7"/>
+                            <rect x="3" y="14" width="7" height="7"/>
+                            <rect x="14" y="14" width="7" height="7"/>
+                        </svg>
+                        Productos
+                    </a>
+                    <a href="pague/Acerca%20de.html">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="12" cy="12" r="9"/>
+                            <path d="M12 11V17M12 7V8"/>
+                        </svg>
+                        Acerca de
+                    </a>
+                    <a href="pague/contacto.html">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="3" y="5" width="18" height="14" rx="2"/>
+                            <path d="M3 7L12 13L21 7"/>
+                        </svg>
+                        Contacto
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!--SECCIÓN DE CARROUSEL-->
+            <section id="inicio">
+                <div id="micarousel" class="carousel slider" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#micarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                        <button type="button" data-bs-target="#micarousel" data-bs-slide-to="1" aria-current="true"></button>
+                        <button type="button" data-bs-target="#micarousel" data-bs-slide-to="2" aria-current="true"></button>
+                    </div>
+
+                    <div class="carousel-inner">                        
+                        <div class="carousel-item active">
+                            <img src="dist/imagenes/banner_celulares.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block carousel-titulo-caption">
+                                <h5>SLIDER 1</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div> 
+
+                        <div class="carousel-item">
+                            <img src="dist/imagenes/banner_computadoras.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block carousel-titulo-caption">
+                                <h5>SLIDER 2</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div> 
+
+                        <div class="carousel-item">
+                            <img src="dist/imagenes/banner_laptops.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block carousel-titulo-caption">
+                                <h5>SLIDER 3</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div> 
+
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#micarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#micarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+
+                </div>
+            </section>
+
+
+            <section class="promo-gr">
+                
+                <h3>GR TECHSTORE</h3>
+
+                <h1>
+                    ¡LA TECNOLOGÍA QUE QUIERES,
+                    AL PRECIO QUE BUSCAS!
+                </h1>
+
+                <p>
+                    Descubre celulares, laptops y computadoras
+                    para estudiar, trabajar y disfrutar.
+                </p>
+
+                <a href="#ofertas" class="boton-promo boton-brillo">
+                    ¡EXPLORA NUESTRAS OFERTAS!
+                </a>
+            </section>
+
+            <!--SECCIÓN DE CARDS-->
+            <section class="container seccion-cards" id="ofertas">
+                <hr>
+                <div class="row">
+                    <div class="col-12 col-md-4 mb-1 col-efecto-3d">
+                        <div class="card card-efecto-3d">
+                            <img src="dist/imagenes/decuent1.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">¡Renueva tu celular!</h5>
+                                <p class="card-text">Descubre smartphones modernos para mantenerte conectado. ¡Explora nuestras ofertas y encuentra el celular ideal para ti!
+                                    <span class="badge bg-danger">DESCUENTO</span>
+
+                                </p>
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#miejemplomodal" >VER OFERTAS</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-1 col-efecto-3d">
+                          <div class="card card-efecto-3d">
+                            <img src="dist/imagenes/descuent2.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">¡Potencia tu mundo digital!</h5>
+                                <p class="card-text card-body-text">Encuentra computadoras para estudiar, trabajar y jugar. ¡Renueva tu equipo y disfruta de nuestras promociones de locura!
+                                    <span class="badge bg-danger">DESCUENTO</span>
+
+                                </p>
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#miejemplomodal">VER OFERTAS</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-1 col-efecto-3d">
+                        <div class="card card-efecto-3d">
+                            <img src="dist/imagenes/descuento3.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">¡Tu laptop ideal te espera!</h5>
+                                <p class="card-text">Lleva tus proyectos al siguiente nivel con una laptop para tus necesidades. ¡Descubre nuestras ofertas especiales de locura!
+                                    <span class="badge bg-danger">DESCUENTO</span>
+
+                                </p>
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalregistrousuario">Success</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--SECCIÓN DE ANIMACIONES CSS 3D-->
+            <section class="container seccion-3d">
+                <h2 class="titulo-seccion">DESCUBRE EL MUNDO TECNOLÓGICO DE GR TECH STORE</h2>
+                <p class="texto-seccion">Explora nuestra tecnología, encuentra tus productos favoritos y descubre todo lo que tenemos para ti.</p>
+                <div class="row">
+                    <div class="col-12 col-md-4 mb-3">
+                        <h3 class="subtitulo-3d">Celulares</h3>
+                        <div class="caja-demo">
+                            <div class="escena-3d">
+                                <div class="tarjeta-giro">
+                                    <div class="cara-frontal">
+                                        <img src="dist/imagenes/celulares_frente.png" alt="Celulares">
+                                        <span></span>
+                                    </div>
+                                    <div class="cara-trasera">
+                                        <img src="dist/imagenes/celulares_reverso.png" alt="Laptop">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="nota-3d">¡La tecnología que necesitas está en tus manos! 📱 Descubre nuestra variedad de celulares ideales para comunicarte, disfrutar tus aplicaciones, capturar momentos increíbles y mantenerte conectado con el mundo.</p>
+                    </div>
+                    <div class="col-12 col-md-4 mb-3">
+                        <h3 class="subtitulo-3d">Laptops</h3>
+                        <div class="caja-demo">
+                            <div class="escena-3d">
+                                <div class="tarjeta-giro">
+                                    <div class="cara-frontal">
+                                        <img src="dist/imagenes/laptops_frente.png" alt="Celulares">
+                                        <span></span>
+                                    </div>
+                                    <div class="cara-trasera">
+                                        <img src="dist/imagenes/laptops_reverso.png" alt="Laptop">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="nota-3d">¡La tecnología que necesitas está en tus manos! 📱 Descubre nuestra variedad de celulares ideales para comunicarte, disfrutar tus aplicaciones, capturar momentos increíbles y mantenerte conectado con el mundo.</p>
+                    </div>
+                    <div class="col-12 col-md-4 mb-3">
+                        <h3 class="subtitulo-3d">Zona Gamer</h3>
+                        <div class="caja-demo">
+                            <div class="escena-3d">
+                                <div class="tarjeta-giro">
+                                    <div class="cara-frontal">
+                                        <img src="dist/imagenes/zona_gamer_frente.png" alt="Celulares">
+                                        <span></span>
+                                    </div>
+                                    <div class="cara-trasera">
+                                        <img src="dist/imagenes/zona_gamer_reverso.png" alt="Laptop">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="nota-3d">¡La tecnología que necesitas está en tus manos! 📱 Descubre nuestra variedad de celulares ideales para comunicarte, disfrutar tus aplicaciones, capturar momentos increíbles y mantenerte conectado con el mundo.</p>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <!--SECCIÓN DE MAS ANIMACIONES Y ENLACES-->
+            <section class="container seccion-3d seccion-mas-animaciones">
+                <h2 class="titulo-seccion">Explora nuestras categorías</h2>
+                <p class="texto-seccion">¡La mejor tecnología para ti! Descubre nuestros productos y encuentra todo lo que necesitas en un solo lugar.</p>
+
+                <h3 class="subtitulo-3d">ENCUENTRA TU TECNOLOGÍA IDEAL</h3>
+                <div class="estante">
+                    <article class="libro libro-a">
+                        <img src="dist/imagenes/celulares libre.png" alt="Portada de CELULARES">
+                        <strong>CELULARES</strong>
+                        <p>¡Conéctate con lo mejor! Descubre smartphones modernos para comunicarte y disfrutar cada momento.</p>
+                    </article>
+                    <article class="libro libro-b">
+                        <img src="dist/imagenes/acceso libro.png" alt="Portada de ACCESORIOS">
+                        <strong>ACCESORIOS</strong>
+                        <p>¡Rendimiento para cada desafío! Equipos para tus proyectos, tareas y entretenimiento.</p>
+                    </article>
+                    <article class="libro libro-c">
+                        <img src="dist/imagenes/lactop libr.png" alt="Portada de LAPTOPS">
+                        <strong>LAPTOPS</strong>
+                        <p>¡Potencia tus ideas! Encuentra la laptop ideal para estudiar, trabajar y crear sin límites.</p>
+                    </article>
+                    <article class="libro libro-d">
+                        <img src="dist/imagenes/gamer libro.png" alt="Portada de ZONA GAMER">
+                        <strong>ZONA GAMER</strong>
+                        <p>¡Conecta todo fácilmente! Soluciones de carga y conexión para tus dispositivos.</p>
+                    </article>
+                   
+                </div>
+                <p class="nota-3d">Quedan montados como naipes. Al pasar el mouse, ese libro pasa al frente y se ve la portada con todo el texto.</p>
+
+                <div class="row mt-4">
+                    <div class="col-12 col-md-6 mb-3">
+                        <h3 class="subtitulo-3d">Ficha que muestra el texto</h3>
+                        <article class="ficha">
+                            <div class="ficha-imagen">
+                                <img src="dist/imagenes/zona_gamer.png" alt="Imagen de la ficha">
+                            </div>
+                            <div class="ficha-texto">
+                                <h4>ZONA GAMER</h4>
+                                <p>Descubre computadoras, teclados, mouse y accesorios para llevar tu experiencia de juego al siguiente nivel.</p>
+                            </div>
+                        </article>
+                        <p class="nota-3d">
+                            <p class="text-center">
+                                <h3 class="subtitulo-3d">¡PREPÁRATE PARA LA VICTORIA! 🎮</h3> 
+
+                                </p>
+                            Transforma tu espacio en una verdadera estación gamer. Descubre computadoras, teclados mecánicos, mouse, audífonos y accesorios que complementan tu experiencia de juego.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6 mb-3">
+                        <h3 class="subtitulo-3d">Ficha que muestra el texto</h3>
+                        <article class="ficha">
+                            <div class="ficha-imagen">
+                                <img src="dist/imagenes/ofertas.png" alt="Imagen de la ficha">
+                            </div>
+                            <div class="ficha-texto">
+                                <h4>OFERTAS ESPECIALES</h4>
+                                <p>Explora nuestras promociones en productos tecnológicos y encuentra opciones que se ajusten a tu presupuesto.</p>
+                            </div>
+                        </article>
+                        <p class="nota-3d">
+                            <p class="text-center">
+                                <h3 class="subtitulo-3d">¡LA TECNOLOGÍA QUE DESEAS TE ESPERA! 🔥</h3> 
+
+                                </p>
+                            ¿Pensando en renovar tus dispositivos? Explora nuestras promociones en celulares, laptops, computadoras y accesorios tecnológicos.
+                        </p>
+                    </div>
+
+                <h3 class="subtitulo-3d">Enlaces para aprender más</h3>
+                <ul class="lista-enlaces">
+                    <li>
+                        <a href="https://developer.mozilla.org/es/docs/Web/CSS/CSS_animations/Using_CSS_animations" target="_blank" rel="noopener noreferrer">Animaciones en MDN</a>
+                        <span>Referencia de @keyframes y animation.</span>
+                    </li>
+                    <li>
+                        <a href="https://developer.mozilla.org/es/docs/Web/CSS/CSS_transitions/Using_CSS_transitions" target="_blank" rel="noopener noreferrer">Transiciones en MDN</a>
+                        <span>Cómo suavizar el cambio del :hover.</span>
+                    </li>
+                    <li>
+                        <a href="https://developer.mozilla.org/es/docs/Web/CSS/CSS_transforms/Using_CSS_transforms" target="_blank" rel="noopener noreferrer">Transformaciones en MDN</a>
+                        <span>scale, rotate, translate y el eje 3D.</span>
+                    </li>
+                    <li>
+                        <a href="https://www.w3schools.com/css/css3_animations.asp" target="_blank" rel="noopener noreferrer">CSS Animations en W3Schools</a>
+                        <span>Ejemplos cortos para copiar y probar.</span>
+                    </li>
+                    <li>
+                        <a href="https://www.w3schools.com/css/css3_transitions.asp" target="_blank" rel="noopener noreferrer">Transiciones en W3Schools</a>
+                        <span>El zoom y el alto que se abre.</span>
+                    </li>
+                    <li>
+                        <a href="https://animista.net/" target="_blank" rel="noopener noreferrer">Animista</a>
+                        <span>Generador visual: eliges el movimiento y te da el CSS.</span>
+                    </li>
+                    <li>
+                        <a href="https://animate.style/" target="_blank" rel="noopener noreferrer">Animate.css</a>
+                        <span>Biblioteca de entradas, rebotes y giros ya hechos.</span>
+                    </li>
+                  
+                </ul>
+            </section>
+
+            <!--SECCIÓN DE ACCORDIÓN-->
+            <section class="container mt-3 mb-3">
+                <div class="accordion" id="ejemploaccordion">
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="accordionUno">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#divcolapseuno">
+                                Ejemplo de accordión
+                            </button>
+                        </h2>
+                        <div id="divcolapseuno" class="accordion-collapse collapse" data-bs-parent="#ejemploaccordion">
+                            <div class="accordion-body">
+                                <p>
+                                    contenidos
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="accordiondos">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#divcolapsedos">
+                                Ejemplo de accordión 2
+                            </button>
+                        </h2>
+                        <div id="divcolapsedos" class="accordion-collapse collapse" data-bs-parent="#ejemploaccordion">
+                            <div class="accordion-body">
+                                <p>
+                                    contenidos
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer></footer>  
+        
+        
+        <div class="modal fade" id="miejemplomodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">MI EJEMPLO MODAL</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        MI EJEMPLO MODAL
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalregistrousuario" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Registrate</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <label>Nombre</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label>Apellido</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label>Correo Electrónico</label>
+                                    <input type="email" class="form-control">
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label>Contraseña</label>
+                                    <input type="password" class="form-control">
+                                </div>
+                                <div class="col-12 m-3 text-center">
+                                    <button class="btn btn-lg btn-success">Guardar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--BOTON FLOTANTE WHATSAPP. Cambia 51999999999 por el numero real, con codigo de pais-->
+        <a class="boton-whatsapp" href="https://wa.me/51999999999" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp" title="Escríbenos por WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" shape-rendering="geometricPrecision">
+                <path fill="currentColor" d="M19.05 4.91A9.82 9.82 0 0 0 12.02 2a9.82 9.82 0 0 0-9.8 8.96c0 1.73.46 3.43 1.33 4.9L2 22l6.3-1.66a9.73 9.73 0 0 0 8.78-9.68.98.98 0 0 1 0-.12 9.78 9.78 0 0 0 .97-4.63zM12 19.22c-1.04 0-2.05-.28-2.93-.8l-.21-.12-3.73 1 .99-3.64-.14-.24a7.57 7.57 0 0 1-1.15-4.1A7.63 7.63 0 0 1 12 4.8a7.63 7.63 0 0 1 7.63 7.63 7.63 7.63 0 0 1-7.63 7.63zm4.23-5.75c-.23-.12-1.36-.67-1.58-.75-.21-.08-.37-.12-.52.12-.15.23-.59.75-.72.9-.13.15-.27.17-.5.06-.23-.12-.97-.36-1.85-1.15-.68-.61-1.13-1.36-1.26-1.59-.12-.23-.01-.35.1-.46.11-.11.23-.27.35-.4.12-.13.16-.23.24-.38.08-.15.04-.28-.02-.4-.06-.12-.52-1.25-.71-1.71-.19-.45-.38-.39-.52-.39h-.45c-.15 0-.4.06-.61.28-.21.23-.8.79-.8 1.93 0 1.13.82 2.24.94 2.39.12.15 1.5 2.34 3.65 3.24.51.22.91.35 1.22.45.51.16 1 .14 1.38.09.42-.06 1.28-.52 1.46-1.03.18-.5.18-.94.13-1.03-.05-.09-.2-.15-.42-.27z"/>
+            </svg>
+        </a>
+
+    </body>
+    <script src="dist/js/bootstrap.bundle.min.js"></script>
+</html>
